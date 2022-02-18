@@ -5,7 +5,7 @@ import App from './App';
 
 
 const Index = () => {
-  return ( <div>Dany</div> );
+  return ( <div></div> );
 }
  
 

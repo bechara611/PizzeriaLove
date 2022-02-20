@@ -1,6 +1,23 @@
 
 
-.headermenu
+.nav
 {
 background: transparent;
+
+}
+
+.headermenu2
+{
+
+    
+    min-height: 300px;
+}
+
+.hijo1
+{
+    align-self: start;
+}
+.hijo2
+{
+    align-self: start;
 }

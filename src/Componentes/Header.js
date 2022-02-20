@@ -1,21 +1,22 @@
 import {NavLink} from 'react-router-dom'
 import styled from 'styled-components';
 import { BotonTipoNavLink } from '../Elementos/BotonTipoNavLink';
+import './Header.css'
 const Header = () => {
     let url1,url2;
     url1="#";
       return (
-        <nav className="navbar navbar-expand-sm navbar-dark bg-dark fixed-top ">
-        <div className="container">
-        <div>
+        <nav className="navbar navbar-expand-sm navbar-light  fixed-top nav">
+        <div className="container-fluid headermenu2 bg-danger ">
+        <div className='hijo1'>
          <a href={url1} className="navbar-brand">PizzeriaLove</a> 
 
         
           
         </div>
-      
+      <div className='hijo2'>
         <button 
-        className="navbar-toggler"
+        className="navbar-toggler mt-2"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#menu"
@@ -35,7 +36,7 @@ const Header = () => {
       </ul>
     
     </div>
-    
+    </div>
         </div>
       
       </nav>

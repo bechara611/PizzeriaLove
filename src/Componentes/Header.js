@@ -1,15 +1,17 @@
 import {NavLink} from 'react-router-dom'
 import styled from 'styled-components';
 import { BotonTipoNavLink } from '../Elementos/BotonTipoNavLink';
+import {App,App2} from './../App';
 import './Header.css'
 const Header = () => {
     let url1,url2;
     url1="#";
       return (
-        <nav className="navbar navbar-expand-sm navbar-light  fixed-top nav">
-        <div className="container-fluid headermenu2 bg-danger ">
+        <>
+        <nav className="navbar navbar-expand-sm navbar-light   nav">
+        <div className="container-fluid contenedor1 bg-danger ">
         <div className='hijo1'>
-         <a href={url1} className="navbar-brand">PizzeriaLove</a> 
+         <BotonTipoNavLink to={url1} className="navbar-brand">PizzeriaLove</BotonTipoNavLink> 
 
         
           
@@ -40,6 +42,11 @@ const Header = () => {
         </div>
       
       </nav>
+      <App2></App2>
+      <App2></App2>
+      <App2></App2>
+      <App2></App2>
+      </>
        );
     }
 

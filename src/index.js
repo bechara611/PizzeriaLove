@@ -13,10 +13,8 @@ const Index = () => {
   <BrowserRouter> 
      <Header></Header> 
     <Routes>
-   <Route path='/' element={<App />} >
-   <Route path='' element={<App/>}/ >
-   <Route path='*' element={<App/>}/ >
-    </Route>
+    <Route path='/' element={<App2 />} ></Route>
+    <Route path='/inicio' element={<App />} ></Route>
     </Routes>
 
     </BrowserRouter>

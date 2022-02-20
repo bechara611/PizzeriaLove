@@ -5,7 +5,7 @@ import {App,App2} from './../App';
 import './Header.css'
 const Header = () => {
     let url1,url2;
-    url1="#";
+    url1="/inicio";
       return (
         <>
         <nav className="navbar navbar-expand-sm navbar-light   nav">
@@ -42,10 +42,7 @@ const Header = () => {
         </div>
       
       </nav>
-      <App2></App2>
-      <App2></App2>
-      <App2></App2>
-      <App2></App2>
+   
       </>
        );
     }

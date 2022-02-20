@@ -1,10 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const App=()=> {
   return (
     <div >
-<h1>Dany bechara</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, ipsum.</p>
+<h1>Dany</h1>
     </div>
   );
 }

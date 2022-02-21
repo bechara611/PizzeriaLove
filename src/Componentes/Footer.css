@@ -1,0 +1,30 @@
+.footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.fila
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: black;
+    font-size: 12px;
+}
+.fila p 
+{
+    
+color: white;
+}
+.footer a{
+    text-decoration: none;
+font-size: 30px;
+display: inline-block;
+color: white;
+margin: 0 10px;
+}
+.face:hover{color: blue;}
+.twitter:hover{color: lightblue;}
+.instagram:hover{color:#fcaf45}

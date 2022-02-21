@@ -3,9 +3,10 @@ import './App.css';
 
 const App=()=> {
   return (
-    <div >
+    <div className='container' >
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, ipsum.</p>
 <h1>Dany</h1>
+
     </div>
   );
 }

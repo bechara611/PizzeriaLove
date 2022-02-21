@@ -6,17 +6,28 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import Header from './Componentes/Header';
 import {BrowserRouter,Route, Routes,NavLink} from 'react-router-dom'
 import {App,App2} from './App';
+import WebFont from 'webfontloader'
+import './index.css'
+import Carousel from './Componentes/Carousel';
+import Menu from './Componentes/Menu';
+import Footer from './Componentes/Footer';
 
+WebFont.load({
+  google: {
+    families: ['Open Sans:400,500,700', 'Sans-serif']
+  }
+});
 
 const Index = () => {
   return ( 
   <BrowserRouter> 
      <Header></Header> 
+     <Carousel></Carousel>
     <Routes>
-    <Route path='/' element={<App2 />} ></Route>
-    <Route path='/inicio' element={<App />} ></Route>
+    <Route path='/' element={<Menu />} ></Route>
+    <Route path='/inicio' element={<Menu />} ></Route>
     </Routes>
-
+    <Footer></Footer>
     </BrowserRouter>
     );
 }

@@ -1,0 +1,77 @@
+
+    
+
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+
+   
+}
+.header_nav2
+{
+    /* margin-top: -8px; */
+    background: -moz-linear-gradient(top,  rgba(211,126,128,1) 0%, rgba(146,171,207,0) 76%, rgba(134,179,222,0) 90%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(211,126,128,1) 0%,rgba(146,171,207,0) 76%,rgba(134,179,222,0) 90%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(211,126,128,1) 0%,rgba(146,171,207,0) 76%,rgba(134,179,222,0) 90%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d37e80', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
+
+   
+}
+body
+{
+    /* background: url(./../Imagenes/textura.png);
+	background-repeat: repeat;
+	background-attachment: fixed; */
+}
+
+.nav
+{
+
+
+}
+
+.contenedor12
+{
+
+    /* min-height: 300px;  */
+}
+
+.hijo1_header
+{
+    align-self: start;
+    /* margin-top: 2%; */
+ 
+}
+.hijo2_header
+{
+    /* margin-top: 2%; */
+    align-self: start;
+}
+.header_menu
+{
+    
+}
+
+.opcion
+{
+text-decoration: dotted;
+display: inline-block;
+opacity: 1;
+}
+
+
+
+.opcion:visited   
+{
+    color: white;
+text-decoration: underline;
+color: white;
+opacity: 1;
+font-size: 40px;
+}
+
+.opcion:link 
+{
+color: green;
+}

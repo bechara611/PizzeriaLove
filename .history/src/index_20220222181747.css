@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  font-family:'Open Sans';
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
+
+ 
+ 
+}
+
+
+body
+{
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 35%, rgba(242,241,241,1) 89%, rgba(10,10,10,0.38699229691876746) 100%);
+
+  background-attachment:fixed;
+}
+
+a:visited   
+{
+color: green;
+}
+
+
+

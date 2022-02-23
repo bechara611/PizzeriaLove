@@ -5,7 +5,7 @@ import { db,app } from '../Firebase/FirebaseConfig';
 import { addDoc,collection } from 'firebase/firestore';
 import Alerta from '../Elementos/Alerta';
 import Menu from './Menu';
-import AlertaRed from '../Elementos/AlertaRed';
+
 
 
 
@@ -17,9 +17,6 @@ const FormularioAgregarMenu = () => {
     const [plato,cambiarPlato]=useState('');
     const [AlertaGenerada,CambiarAlertaGenerada]=useState(false);
     const [acceder,CambiarAcceder]=useState(false);
-    const [usuario,cambiarUsuario]=useState('');
-    const [clave,cambiarClave]=useState('');
-    const [Alerta2,cambiarAlerta]=useState(false);
 
     const Registrar =async () => {
         try {
@@ -32,7 +29,7 @@ const FormularioAgregarMenu = () => {
         cambiarPlato('');
         cambiarCategoria('');
         cambiarPrecio('')
-        CambiarAlertaGenerada(false);
+        CambiarAlertaGenerada(true);
         } catch (error) {
             console.log(error)
         }
@@ -43,71 +40,7 @@ const FormularioAgregarMenu = () => {
 
     return ( 
         <>
-        {Alerta2===true
-        ?
-        <AlertaRed CambiarAlertaGenerada={cambiarAlerta}></AlertaRed>
-        :
-        <></>
-        }
-        {acceder===false ?
-           
-            
-            <div className="container ">
-           
-            <form action="" className='py-5 ' onSubmit={(e)=>{
-                e.preventDefault();
-                if(clave==='123456' && usuario==='admin')
-                {
-                    CambiarAcceder(true);
-                }else
-                {
-                    cambiarAlerta(true);
-                }
-            }}>
-            <div className="row">
-       
-            <div className="col-6">
-            <label htmlFor="correo" className="form-label">User</label>
-            <input type="text" value={usuario} name="usuario" id="usuario" className='form-control py-1' aria-describedby='usuario' onChange={((e)=>{
-                cambiarUsuario(e.target.value)
-            })} />
-            <div id="usuario" className="form-text py-2">
-             Admin
-            </div>
-            </div>
-    
-            <div className="col-6">
-            <label htmlFor="password" className="form-label">Password</label>
-            <input type="password" value={clave} name="password" id="password" className='form-control' aria-describedby='password' onChange={(e)=>{
-                cambiarClave(e.target.value);
-            }} />
-            <div id="password" className="form-text">
-             Please, insert your password
-            </div>
-            </div>
-            </div>
-       
-           
-            <div className="row">
-            <div className="col-12 my-4">  <button type='submit' className=' btn btn-success col-12'>LOGIN</button></div>
-            </div>
-            
-         
-    
-            </form>
-            </div>
-            :
-            <></>
-        }
-       
-       
-
-
-
-
-       {acceder===true ?
-         <>
-         <div className="container my-5 contenedor_formulario">
+        <div className="container my-5 contenedor_formulario">
      <h2 className='my-3 text-center'>Create a new pizza</h2>
      {AlertaGenerada && <Alerta CambiarAlertaGenerada={CambiarAlertaGenerada} valorr={3}></Alerta>}
         <form action="" className='' onSubmit={(e)=>{
@@ -152,28 +85,12 @@ const FormularioAgregarMenu = () => {
           
         </div>
         <div className="row">
-        <div className="col-12 my-4">  <button type='submit' className=' btn btn-primary col-12' onClick={()=>{
-            
-        }}>INSERT</button></div>
+        <div className="col-12 my-4">  <button type='submit' className=' btn btn-primary col-12'>INSERT</button></div>
         </div>
             </form>
         </div>
         
         <Menu borrar={true}></Menu>
-
-        <div className="row">
-        <div className="col-12 d-flex justify-content-center py-5">
-        <button className='btn btn-danger col-4 ' onClick={()=>{
-            CambiarAcceder(false)
-            cambiarUsuario('')
-            cambiarClave('')
-        }}>Logout</button>
-        </div>
-        </div>
-         </> 
-         :
-          <></>}
-        
         </>
          );
         

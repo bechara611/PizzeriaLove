@@ -20,7 +20,7 @@ const useObtenerMenu = () => {
         
        
       
-            return FuncionObtenerMenu;
+           
           },[])
           return [platos,cambiarplatos]
 }

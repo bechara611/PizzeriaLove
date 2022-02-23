@@ -9,18 +9,17 @@ const useObtenerMenu = () => {
             const FuncionObtenerMenu=onSnapshot(collection(db,'menu'), (snapShot)=>{
     
                let vectormenu=snapShot.docs.map((documento)=>{
-                  // console.log(documento.id)
+                   console.log(documento.id)
                     return {...documento.data(),id:documento.id}
                 })
               //  console.log(vectormenu);
-              cambiarplatos([{}])
                 cambiarplatos(vectormenu)
             }) 
             
         
        
       
-            return FuncionObtenerMenu;
+           
           },[])
           return [platos,cambiarplatos]
 }

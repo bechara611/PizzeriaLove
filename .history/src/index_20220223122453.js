@@ -24,9 +24,8 @@ const Index = () => {
   const [admin,cambiaradmin]=useState('');
   return ( 
   <BrowserRouter> 
-     <Header administrador={administrador} cambiaradministrador={cambiaradministrador} cambiaradmin={cambiaradmin} admin={admin}></Header> 
-   {admin==='admin' ? <h2 className='my-5 tittle text-dark text-center'>ADMIN</h2>:<></>}
-     <Carousel></Carousel>
+     <Header administrador={administrador} cambiaradministrador={cambiaradministrador} cambiaradministradorstring={cambiaradministradorstring}></Header> 
+   <Carousel></Carousel>
   
     <Routes>
     <Route path='/' element={<Menu borrar={false} />} ></Route>

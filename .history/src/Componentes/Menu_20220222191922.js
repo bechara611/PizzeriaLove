@@ -11,7 +11,7 @@ const Menu = ({borrar}) => {
     
     return (
         <>
-        <div className="container contenedor-tabla">
+        <div className="container">
         <div className="row my-5">
         
         <div className="col titulo">

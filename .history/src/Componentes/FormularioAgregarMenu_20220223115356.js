@@ -67,21 +67,21 @@ const FormularioAgregarMenu = () => {
             <div className="row">
        
             <div className="col-6">
-            <label htmlFor="correo" className="form-label">User</label>
+            <label htmlFor="correo" class="form-label">User</label>
             <input type="text" value={usuario} name="usuario" id="usuario" className='form-control py-1' aria-describedby='usuario' onChange={((e)=>{
                 cambiarUsuario(e.target.value)
             })} />
-            <div id="usuario" className="form-text py-2">
+            <div id="usuario" class="form-text py-2">
              Admin
             </div>
             </div>
     
             <div className="col-6">
-            <label htmlFor="password" className="form-label">Password</label>
+            <label htmlFor="password" class="form-label">Password</label>
             <input type="password" value={clave} name="password" id="password" className='form-control' aria-describedby='password' onChange={(e)=>{
                 cambiarClave(e.target.value);
             }} />
-            <div id="password" className="form-text">
+            <div id="password" class="form-text">
              Please, insert your password
             </div>
             </div>
@@ -163,11 +163,7 @@ const FormularioAgregarMenu = () => {
 
         <div className="row">
         <div className="col-12 d-flex justify-content-center py-5">
-        <button className='btn btn-danger col-4 ' onClick={()=>{
-            CambiarAcceder(false)
-            cambiarUsuario('')
-            cambiarClave('')
-        }}>Logout</button>
+        <button className='btn btn-danger col-4 ' onClick={()=>{CambiarAcceder(false)}}>Logout</button>
         </div>
         </div>
          </> 

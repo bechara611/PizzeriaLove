@@ -13,14 +13,14 @@ const useObtenerMenu = () => {
                     return {...documento.data(),id:documento.id}
                 })
               //  console.log(vectormenu);
-              cambiarplatos([{}])
+              cambiarplatos({[]})
                 cambiarplatos(vectormenu)
             }) 
             
         
        
       
-            return FuncionObtenerMenu;
+           
           },[])
           return [platos,cambiarplatos]
 }

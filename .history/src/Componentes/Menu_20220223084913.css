@@ -11,8 +11,7 @@ th{text-align: center;}
 .basurita{background: black;}
 
 .table-responsive{
-    
-  
-   
+     background: url(../Imagenes/textura.png), #019851
+     background-position:center;
    
     }

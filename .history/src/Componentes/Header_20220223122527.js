@@ -6,7 +6,7 @@ import {App,App2} from './../App';
 import './Header.css'
 
 
-const Header = ({cambiaradministrador,administrador,cambiaradmin}) => {
+const Header = ({cambiaradministrador},{administrador},{cambiaradmin}) => {
     let url1,urladmin;
     url1="/inicio";
     urladmin='/administrador'
@@ -36,9 +36,10 @@ const Header = ({cambiaradministrador,administrador,cambiaradmin}) => {
     
       <div className="collapse navbar-collapse" id="menu">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0 header_menu">
-      <li className="nav-item opcion"><a href="#menuu" className="nav-link text-light  opcion" onClick={()=>{cambiaradmin('usuario')}}><Menu2></Menu2> Menú</a></li>
-        <li className="nav-item"><BotonTipoNavLinkA to={url1} className="nav-link text-light" onClick={()=>{cambiaradmin('usuario')}}><Inicio2/> Inicio</BotonTipoNavLinkA></li> 
-        <li className="nav-item"><BotonTipoNavLink to={urladmin} className="nav-link text-light" onClick={()=>{cambiaradmin('admin')}}> <Administrador2 /> Administrador</BotonTipoNavLink></li>
+      <li className="nav-item opcion"><a href="#menuu" className="nav-link text-light  opcion"><Menu2></Menu2> Menú</a></li>
+        <li className="nav-item"><BotonTipoNavLinkA to={url1} className="nav-link text-light"><Inicio2/> Inicio</BotonTipoNavLinkA></li> 
+        <li className="nav-item"><BotonTipoNavLink to={url1} className="nav-link text-light"> <Contacto2 /> Contacto</BotonTipoNavLink></li>
+        <li className="nav-item"><BotonTipoNavLink to={urladmin} className="nav-link text-light"> <Administrador2 /> Administrador</BotonTipoNavLink></li>
       </ul>
     
     </div>

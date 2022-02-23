@@ -163,11 +163,7 @@ const FormularioAgregarMenu = () => {
 
         <div className="row">
         <div className="col-12 d-flex justify-content-center py-5">
-        <button className='btn btn-danger col-4 ' onClick={()=>{
-            CambiarAcceder(false)
-            cambiarUsuario('')
-            cambiarClave('')
-        }}>Logout</button>
+        <button className='btn btn-danger col-4 ' onClick={()=>{CambiarAcceder(false)}}>Logout</button>
         </div>
         </div>
          </> 

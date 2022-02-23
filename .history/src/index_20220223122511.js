@@ -25,8 +25,7 @@ const Index = () => {
   return ( 
   <BrowserRouter> 
      <Header administrador={administrador} cambiaradministrador={cambiaradministrador} cambiaradmin={cambiaradmin} admin={admin}></Header> 
-   {admin==='admin' ? <h2 className='my-5 tittle text-dark text-center'>ADMIN</h2>:<></>}
-     <Carousel></Carousel>
+   <Carousel></Carousel>
   
     <Routes>
     <Route path='/' element={<Menu borrar={false} />} ></Route>

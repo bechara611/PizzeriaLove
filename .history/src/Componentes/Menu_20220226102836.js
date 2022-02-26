@@ -44,11 +44,11 @@ const Menu = ({borrar}) => {
                      <td>{index +1}</td>
                      <td>{plato.plato}</td>
                      <td>{plato.categorias}</td>
-                     {borrar===true ?    <td>{plato.precio}$  <Trash2 onClick={()=>{
+                     {borrar===true ?    <td>{plato.precio} $  <Trash2 onClick={()=>{
                         if (borrar===true) {
                             BorrarDocumento(plato.id)
                          }
-                     }}></Trash2> </td> : <td>{plato.precio}$</td> }
+                     }}></Trash2> </td> : <td>{plato.precio}</td> }
                   
                      </tr>
                      </React.Fragment>

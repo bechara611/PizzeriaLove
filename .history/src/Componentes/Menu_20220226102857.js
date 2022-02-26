@@ -48,7 +48,7 @@ const Menu = ({borrar}) => {
                         if (borrar===true) {
                             BorrarDocumento(plato.id)
                          }
-                     }}></Trash2> </td> : <td>{plato.precio}$</td> }
+                     }}></Trash2> </td> : <td>{plato.precio}</td> }
                   
                      </tr>
                      </React.Fragment>

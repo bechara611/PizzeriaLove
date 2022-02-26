@@ -6,7 +6,7 @@ import {ReactComponent as Administrador} from './../Imagenes/Administrador.svg'
 import {ReactComponent as Contacto} from './../Imagenes/Contacto.svg'
 import {ReactComponent as Heart} from './../Imagenes/Heart.svg'
 import {ReactComponent as Trash} from './../Imagenes/Trash.svg'
-import {ReactComponent as Casita} from './../Imagenes/Casa.svg'
+import {ReactComponente as Casita} from './../Imagenes/Casa.svg'
 
 const Pizza2 = styledComponents(Pizza)`
 font-size:10px;

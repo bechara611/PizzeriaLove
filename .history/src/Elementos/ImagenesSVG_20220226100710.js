@@ -6,8 +6,7 @@ import {ReactComponent as Administrador} from './../Imagenes/Administrador.svg'
 import {ReactComponent as Contacto} from './../Imagenes/Contacto.svg'
 import {ReactComponent as Heart} from './../Imagenes/Heart.svg'
 import {ReactComponent as Trash} from './../Imagenes/Trash.svg'
-import {ReactComponent as Casita} from './../Imagenes/Casa.svg'
-
+import {ReactComponent as Home} from './../Imagenes/Home.svg'
 const Pizza2 = styledComponents(Pizza)`
 font-size:10px;
 z-index: 1;
@@ -23,13 +22,13 @@ fill:white;
 
 `;
 
-const Casita2=styledComponents(Casita)`
+const Home2 = styledComponents(Home)`
 font-size:10px;
 z-index: 1;
 color:white;
 fill:white;
-`
 
+`;
 const Menu2 = styledComponents(Menu)`
 font-size:10px;
 z-index: 1;
@@ -66,4 +65,4 @@ fill:blue;
 cursor:pointer;
 `
 
-export {Pizza2,Administrador2,Inicio2,Menu2, Contacto2,Heart2,Trash2,Casita2}
+export {Pizza2,Administrador2,Inicio2,Menu2, Contacto2,Heart2,Trash2,Home2}

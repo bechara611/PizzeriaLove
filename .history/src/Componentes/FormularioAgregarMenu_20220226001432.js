@@ -120,7 +120,7 @@ const FormularioAgregarMenu = () => {
         <label htmlFor='plato' className="form-label">New plate</label>
             <input value={plato} required type="text" className='form-control' name="plato" id="plato" aria-describedby='ayuda-plato' 
             onChange={(e)=>{
-                cambiarPlato(e.target.value.toUpperCase())
+                cambiarPlato(e.target.value)
             }}/>
             <div id="ayuda-plato" className="form-text">
             Please, insert the new plate.
@@ -130,7 +130,7 @@ const FormularioAgregarMenu = () => {
             <label htmlFor='categorias' className="form-label">Category</label>
             <input required value={categoria} type="text" className='form-control' name="categorias" id="categorias" aria-describedby='ayuda-categorias' 
             onChange={(e)=>{
-                cambiarCategoria(e.target.value.toUpperCase())
+                cambiarCategoria(e.target.value)
             }} />
             <div id="ayuda-plato" className="form-text">
             Please, insert the categoria.

@@ -16,7 +16,7 @@ const Header = ({cambiaradministrador,administrador,cambiaradmin}) => {
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark  header_nav">
         <div className="container contenedor1 text-center col-12 ">
         <div className='hijo1_header text-center col-12 col-sm-3 '>
-         <BotonTipoNavLink to={url1} className="navbar-brand text-center  "> <Heart2 / > PizzeriaLove <Pizza2></Pizza2></BotonTipoNavLink> 
+         <BotonTipoNavLink to={url1} className="navbar-brand text-center fs-5 "> <Heart2 / > PizzeriaLove <Pizza2></Pizza2></BotonTipoNavLink> 
 
         
           

@@ -1,0 +1,31 @@
+.cardcita{
+   border-radius: 100px;
+   max-height: 500px;
+   min-height: 500px;
+
+
+}
+
+.cardcitaImagen
+{
+    border-radius: 15px;
+    max-height: 500px;
+   min-height: 500px;
+   opacity: .7;
+   animation-name: colores;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+  
+}
+.cardcitaImagen:hover{opacity: 1;}
+
+@keyframes colores
+{
+/*from{background: #9EB3C2;}
+to{background:#21295C ;}*/
+0%{min-height: 510px;}
+25%{min-height: 520;}
+50%{min-height: 530px;}
+75%{min-height: 520;}
+100%{min-height: 510;}
+}

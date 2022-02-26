@@ -1,0 +1,32 @@
+.cardcita{
+   border-radius: 100px;
+   max-height: 500px;
+   min-height: 500px;
+
+
+}
+
+.cardcitaImagen
+{
+    border-radius: 15px;
+    max-height: 500px;
+   min-height: 500px;
+   opacity: .7;
+     animation-name: colores; 
+    animation-duration: 5s;
+
+    animation-iteration-count: infinite;
+}
+.cardcitaImagen:hover{opacity: 1;}
+
+@keyframes colores
+{
+  /*  from{background: #9EB3C2;}
+    to{background:#21295C ;}*/
+    0%{background: #9EB3C2; width: 300px;}
+    25%{background: #1C7293; width: 400px;}
+    50%{background: #065A82; width: 500px;}
+    75%{background: #1B3B6F50; width: 600px;}
+    100%{background: #21295C; width: 700px;}
+
+}

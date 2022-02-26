@@ -1,0 +1,18 @@
+.carousel-inner{border-radius: 50px;}
+.carousel-item{border-radius: 50px;}
+.img-fluid{border-radius: 50px;}
+.icono {
+    height: 100px;
+    width: 100px;
+
+      /*shape border*/
+      border: 5px solid white;
+      border-radius: 50%; /*zero for square */
+      opacity: 0.3;
+      /*symbol */
+      color: BLACK;
+     
+     
+ 
+}
+.icono:hover{opacity: 1;}

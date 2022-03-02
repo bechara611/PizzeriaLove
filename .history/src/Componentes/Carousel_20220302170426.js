@@ -10,7 +10,7 @@ const Carousel = () => {
 <section className="main">
   <div className="container">
     <div className="row mt-5 contenedor-carousel">
-      <div className="col contenedor-carousel">
+      <div className="col">
         <div className="carousel slide carousel" id="mi-carousel" data-bs-ride="carousel">
           <div className="carousel-inner">
             <div className="carousel-item active">

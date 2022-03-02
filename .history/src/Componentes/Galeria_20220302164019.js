@@ -42,22 +42,26 @@ const Galeria2 = () => {
 const Galeria = () => {
     return ( 
         <>
-        <div className="container py-3 ">
-            <div className="row my-4 contenedorImagenes">
+        <div className="container py-3">
+            <div className="row my-4">
                 <div className="col-lg-3 col-12 col-sm-6">
-                    <div className="my-1 contenedor-imagen">
-                        < img src={Pizza5} alt="" className=" img-fluid img-thumbnail imagen-galeria"></img>
+                    <div className="card cardcita my-1">
+                        < img src={Pizza5} alt="" className=" img-fluid img-thumbnail"></img>
                     </div>
                 </div>
                 <div className="col-lg-3 col-12 col-sm-6">
                     <div className="my-1 contenedor-imagen">
-                        < img src={Pizza2} alt="" className="img-fluid img-thumbnail imagen-galeria"></img>
+                        < img src={Pizza2} alt="" className="img-fluid"></img>
                     </div>
                 </div>
-                
                 <div className="col-lg-3 col-12 col-sm-6">
                     <div className="my-1 contenedor-imagen">
-                        < img src={Pizza8} alt="" className="img-fluid img-thumbnail imagen-galeria"></img>
+                        < img src={Pizza3} alt="" className="img-fluid"></img>
+                    </div>
+                </div>
+                <div className="col-lg-3 col-12 col-sm-6 centrar">
+                    <div className="my-1 contenedor-imagen">
+                        < img src={Pizza8} alt="" className="img-fluid"></img>
                     </div>
                 </div>
             </div>

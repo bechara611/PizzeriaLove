@@ -8,10 +8,10 @@ const Carousel = () => {
 
         <>
 <section className="main">
-  <div className="container">
-    <div className="row mt-5 contenedor-carousel">
-      <div className="col contenedor-carousel">
-        <div className="carousel slide carousel" id="mi-carousel" data-bs-ride="carousel">
+  <div className="container-fluid">
+    <div className="row mt-5">
+      <div className="col">
+        <div className="carousel slide carousel-fade" id="mi-carousel" data-bs-ride="carousel">
           <div className="carousel-inner">
             <div className="carousel-item active">
             <div className="carousel-caption">

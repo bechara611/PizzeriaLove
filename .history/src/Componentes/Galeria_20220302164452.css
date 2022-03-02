@@ -7,24 +7,11 @@
 
 
 }
-.contenedorImagenes
+.img-fluid
 {
  
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  min-height: 200px;
  
-}
-.contenedor-imagen
-{
-    align-items: center;
-  
-}
-.imagen-galeria{
-    opacity: .7;
-}
-.imagen-galeria:hover{
-    opacity: 1;
 }
 
 .cardcitaImagen

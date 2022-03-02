@@ -8,10 +8,8 @@
 }
 .img-fluid{
   border-radius: 50px;
-
+  width: 90%;
 }
-.carousel{max-width: 80%;}
-.contenedor-carousel{display: flex; flex-direction: row; justify-content: center;}
 .icono {
     height: 100px;
     width: 100px;

@@ -10,8 +10,7 @@
   border-radius: 50px;
 
 }
-.carousel{max-width: 80%;}
-.contenedor-carousel{display: flex; flex-direction: row; justify-content: center;}
+.carousel{max-width: 90%;}
 .icono {
     height: 100px;
     width: 100px;
